@@ -14,12 +14,22 @@ public class Perfil {
     private String email;
     private String celular;
     private int edad;
+    
+    //El siguiente es para la ultima localizacion, todavia no el historial
+    Localizacion loca;
 
     @Override
     public String toString() {
-        return "Perfil{" + "id=" + id + ", nombre=" + nombre + ", paterno=" + paterno + ", email=" + email + ", celular=" + celular + ", edad=" + edad + '}';
+        return "Perfil{" + "id=" + id + ", nombre=" + nombre + ", paterno=" + paterno + ", email=" + email + ", celular=" + celular + ", edad=" + edad + ", loca=" + loca + '}';
     }
-    
+
+    public Localizacion getLoca() {
+        return loca;
+    }
+
+    public void setLoca(Localizacion loca) {
+        this.loca = loca;
+    }
 
     public Perfil() {
     }
